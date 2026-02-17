@@ -113,3 +113,28 @@ CHECK - it can limit the values allowed in a col.
 SELECT col1,col2 FROM tab_name;
 SELECT * FROM tab_name; -- to select all
 ```
+## WHERE Clause
+```sql
+SELECT col1,col2 FROM tab_name
+WHERE conditions;
+```
+## Operators in Where clause
+Arithmetic - +,-,*,/,%
+
+Comparison - <,<=,>,>=,!=,==
+
+Logical - AND,OR,NOT,IN BETWEEN,ALL,LIKE,ANY
+
+Bitwise - &,|
+
+```sql
+SELECT * FROM student WHERE city IN ("Delhi","Mumbai"); -- (in -matches any value in the list)
+
+SELECT * FROM student WHERE marks BETWEEN 80 AND 90; -- (both ranges are include in between)
+
+SELECT * FROM student WHERE city NOT IN ("Delhi","Mumbai"); --(not in-to negate given condition)
+
+SELECT * FROM student LIMIT 3; -- set upper limit on number of rows to be returned
+```
+
+
