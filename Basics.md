@@ -63,7 +63,53 @@ TCL(Transaction Control Language) - start,commit,rollback
 ```sql
 CREATE DATABASE IF NOT EXISTS db_name;
 DROP DATABASE IF EXISTS db_name;
-
 SHOW DATABASES;
 SHOW TABLES;
+```
+## Select and view all col
+```sql
+SELECT * FROM tab_name,
+```
+
+## Insert
+```sql
+INSERT INTO tab_name
+(col1,col2)
+VALUES
+(col1_val1,col1_val2),
+(col2_val1,col2_val2); -- order matter
+```
+
+## Keys
+A Primary Key uniquely identifies each row in a table.It can not be NULL.
+
+A Foreign Key is a column in one table that refers to the Primary Key of another table.
+It creates a relationship between tables.
+
+## Constraints
+SQL Constraints are used to specify rules for data in a table.
+
+NOT NULL - col cannot have null value.
+
+UNIQUE - all values in col are different.
+
+PRIMARY KEY - makes col unique and not null,but use only for one.
+
+FOREIGN KEY - prevent action that would destroy link between tables.
+```sql
+.CREATE TABEL temp(
+cust_id INT ,
+FOREIGN KEY (cust_id) REFERENCES customer(id)
+);
+```
+
+DEFAULT - set default value of col.
+
+CHECK - it can limit the values allowed in a col.
+
+## Select Basic Syntax
+
+```sql
+SELECT col1,col2 FROM tab_name;
+SELECT * FROM tab_name; -- to select all
 ```
