@@ -39,16 +39,24 @@ SELECT * FROM student;
 ```
 ## Data types
 char-can store char of fixed length(0-255)
+
 varchar-can store char upto fixed length(0-255)
+
 int , boolean , float , double
+
 date = yyy-mm-dd
+
 time (1901-2155)
 
 ## SQL Commands
 DDL(Data Definition Language) - create ,alter,drop,rename,truncate
+
 DQL(Data Query Language) - select
+
 DML(Data Manipulation Lnguage) - insert,updat,delete
+
 DCL(Data Control Language) - grant,revoke
+
 TCL(Transaction Control Language) - start,commit,rollback
 
 ## If Not exists
